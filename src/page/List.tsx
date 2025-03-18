@@ -1,7 +1,7 @@
 import CategoryButtons from "../components/list/CategoryButtons";
 import LanguageIcons from "../components/list/LanguageIcons";
 import MainBanner from "../components/list/MainBanner";
-import ThumbnailList from "../components/ThumbnailList";
+import ThumbnailList from "../components/list/ThumbnailList";
 
 const List = () => {
   return (

@@ -1,3 +1,9 @@
+export interface ResultTestData {
+  type: string;
+  query: string;
+  img_src: string;
+}
+
 export interface TestData {
   info: {
     mainTitle: string;
@@ -17,11 +23,7 @@ export interface TestData {
       content: string;
     }[];
   }[];
-  results: {
-    type: string;
-    query: string;
-    img_src: string;
-  }[];
+  results: ResultTestData[];
 }
 
 export const TESTS = [
