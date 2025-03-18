@@ -4,6 +4,7 @@ import List from "./page/List";
 import Test from "./page/Test";
 import TestResult from "./page/TestResult";
 import Layout from "./Layout";
+import Privacy from "./page/Privacy";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<List />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="/:testParam" element={<Test />} />
           <Route
             path="/:testParam/result/:resultParam"
