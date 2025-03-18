@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TestData } from "../../data/TESTS";
+import type { TestData } from "../../data/TESTS";
 import Intro from "./Intro";
 import Quiz from "./Quiz";
 import Loading from "./Loading";
@@ -15,12 +15,31 @@ const TestRenderer = ({ currentTest }: { currentTest: TestData }) => {
     TEST_MODE.intro
   );
 
+  const MBTI_SCORE: { [key: string]: number } = {
+    E: 0,
+    I: 0,
+    S: 0,
+    N: 0,
+    T: 0,
+    F: 0,
+    P: 0,
+    J: 0,
+  };
+
+  const [mbtiScore, setMbtiScore] = useState(MBTI_SCORE);
+
   if (mode === TEST_MODE.intro) {
     return <Intro info={currentTest} setMode={setMode} />;
   } else if (mode === TEST_MODE.quiz) {
-    return <Quiz />;
+    return (
+      <Quiz
+        questions={currentTest.questions}
+        setMbtiScore={setMbtiScore}
+        setMode={setMode}
+      />
+    );
   } else if (mode === TEST_MODE.loading) {
-    return <Loading />;
+    return <Loading mbtiScore={mbtiScore} currentTest={currentTest} />;
   } else {
     return (
       <div>
