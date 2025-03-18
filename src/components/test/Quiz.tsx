@@ -49,6 +49,9 @@ const Quiz = ({ questions, setMbtiScore, setMode }: QuizProps) => {
         percent={(questionNum / questions.length) * 100}
         showInfo={false}
       />
+      <h5 className="font-semibold">
+        {questionNum + 1}&nbsp;&#47;&nbsp;{questions.length}
+      </h5>
     </div>
   );
 };
