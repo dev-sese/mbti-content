@@ -5,6 +5,7 @@ import TestResultRenderer from "../components/testResult/TestResultRenderer";
 import ShareButtonGroup from "../components/testResult/ShareButtonGroup";
 import ResultButtonGroup from "../components/testResult/ResultButtonGroup";
 import ResultThumbnailList from "../components/testResult/ResultThumbnailList";
+import KakaoAdfit from "../components/KakaoAdfit";
 
 const TestResult = () => {
   const { testParam, resultParam } = useParams();
@@ -42,6 +43,7 @@ const TestResult = () => {
     <div>
       {testParam && resultParam && currentTest && (
         <div>
+          <KakaoAdfit />
           <TestResultRenderer typeResult={typeResult} />
           <ShareButtonGroup
             testParam={testParam}
