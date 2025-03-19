@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { TestData } from "../../data/TESTS";
 import IntroButtonGroup from "./IntroButtonGroup";
 import { TEST_MODE } from "./TestRenderer";
@@ -12,6 +13,10 @@ const Intro = ({
   >;
 }) => {
   const startClickHandler = () => setMode(TEST_MODE.quiz);
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   return (
     <div className="space-y-6">
