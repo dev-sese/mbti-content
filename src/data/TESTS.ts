@@ -47,173 +47,170 @@ export const TESTS = [
     questions: [
       {
         which: "EI",
-        question: "처음 보는 친구들에게 나는?",
+        question: "운세에서 ‘새로운 사람과의 인연이 찾아온다’고 하면?",
         answers: [
           {
             type: "E",
-            content: "내가 먼저 말을 건낸다.",
+            content: "기대된다! 누구인지 꼭 만나고 싶다.",
           },
           {
             type: "I",
-            content: "대부분 다른 친구가 먼저 말을 건낸다.",
+            content: "새로운 사람은 좀 어색하지만 궁금하다.",
           },
         ],
       },
       {
         which: "EI",
-        question: "주말에 난?",
+        question: "별자리 궁합을 볼 때, 당신은?",
         answers: [
           {
             type: "E",
-            content: "사람들과 만나는 것을 즐긴다.",
+            content: "궁금해서 친구나 연인과 비교해 본다.",
           },
           {
             type: "I",
-            content: "혼자 있는 게 싫지 않은 편이다.",
+            content: "그냥 혼자 찾아보고 속으로 생각한다.",
           },
         ],
       },
       {
         which: "EI",
-        question: "친구들과 놀 때 나는?",
+        question: "운세에서 ‘오늘은 모험을 떠나라’고 하면?",
         answers: [
           {
             type: "E",
-            content: "왁자지껄한 신나는 분위기를 좋아한다.",
+            content: "좋아! 당장 친구를 불러서 뭔가 해볼까?",
           },
           {
             type: "I",
-            content: "소수의 친구들과 소소하게 대화하는 것을 좋아한다. ",
+            content: "혼자 그동안 생각만 했던 특별한 시간을 보낸다.",
           },
         ],
       },
       {
         which: "SN",
-        question: "내가 더 중요하게 생각하는 것은?",
+        question: "별자리 운세에서 ‘곧 큰 변화가 있을 것’이라고 하면?",
         answers: [
           {
             type: "S",
-            content: "현재가 없으면 미래도 없다.",
+            content: "구체적으로 무슨 일이 일어날지 궁금하다.",
           },
           {
             type: "N",
-            content: "미래를 생각하지 않으면 발전이 없다.",
+            content: "혹시 어떤 의미일까? 상징적인 변화를 기대한다.",
           },
         ],
       },
       {
         which: "SN",
-        question: "일할 때 나는?",
+        question: "별자리 성격 분석을 볼 때, 당신은?",
         answers: [
           {
             type: "S",
-            content: "남들이 하는 대로 따라 가는 것이 좋다.",
+            content: "세부적인 설명이 얼마나 정확한지 따져 본다.",
           },
           {
             type: "N",
-            content: "스스로 나만의 방법을 만드는 게 좋다. ",
+            content: "전체적인 흐름과 느낌을 파악하려 한다.",
           },
         ],
       },
       {
         which: "SN",
-        question: "주변 사람들이 나에게 하는 말은?",
+        question: "운세에서 ‘오늘은 중요한 결정을 해야 할 날’이라고 하면?",
         answers: [
           {
             type: "S",
-            content: "꾸준하고 참을성이 있다는 말을 자주한다.",
+            content: "현실적인 정보를 모아서 분석하고 결정한다.",
           },
           {
             type: "N",
-            content: "창의적이고 독창적이라는 말을 자주한다.",
-          },
-        ],
-      },
-      {
-        which: "TF",
-        question: "거절해야 하는 상황이 오면 나는?",
-        answers: [
-          {
-            type: "T",
-            content: "강력하게 할 수 없다고 말한다.",
-          },
-          {
-            type: "F",
-            content: "고민하다가 대부분 들어주는 편이다.",
-          },
-        ],
-      },
-      {
-        which: "TF",
-        question: "화났을 때 나는?",
-        answers: [
-          {
-            type: "T",
-            content: "논리적으로 잘 말하면서 따진다. ",
-          },
-          {
-            type: "F",
-            content: "할말이 많지만 너무 분해서 눈물부터 난다.",
+            content: "직관적으로 큰 그림을 보고 결정한다.",
           },
         ],
       },
       {
         which: "TF",
         question:
-          "고민을 얘기하는 친구, 듣다 보니 친구의 잘못인 것 같다. 그럴 때 나는?",
+          "운세에서 ‘가까운 사람이 당신을 서운하게 생각하고 있다’고 하면?",
         answers: [
           {
             type: "T",
-            content: "친구의 잘못된 점을 말해준다.",
+            content: "최근 내가 서운하게 한 사람이 있는지 생각해 본다.",
           },
           {
             type: "F",
-            content: "직접적으로 말하면 친구가 그래 할까봐 돌려 말한다.",
+            content: "내가 서운하게 만든 사람이 있다니… 미안한 마음이 든다.",
+          },
+        ],
+      },
+      {
+        which: "TF",
+        question: "별자리 궁합에서 ‘이 조합은 맞지 않는다’고 하면?",
+        answers: [
+          {
+            type: "T",
+            content: "그냥 참고할 뿐이지, 관계는 노력에 달려 있다고 생각한다.",
+          },
+          {
+            type: "F",
+            content: "어쩌면 진짜 안 맞을지도… 조금 신경 쓰인다.",
+          },
+        ],
+      },
+      {
+        which: "TF",
+        question: "운세에서 ‘오늘 중요한 선택을 해야 한다’고 하면?",
+        answers: [
+          {
+            type: "T",
+            content: "감정보다는 논리적으로 따져서 결정해야지.",
+          },
+          {
+            type: "F",
+            content: "내 마음이 가는 방향을 따르는 게 중요해.",
           },
         ],
       },
       {
         which: "JP",
-        question: "준비물을 준비할 때 나는?",
+        question: "운세에서 ‘이번 주에 기회가 찾아온다’고 하면?",
         answers: [
           {
             type: "J",
-            content: "하루 전 날 미리 준비한다.",
+            content: "미리 계획하고 준비해서 최상의 기회를 잡고 싶다.",
           },
           {
             type: "P",
-            content: "‘내일 챙겨야지’ 하다가 까먹고 놓고 오는 일이 많다.",
+            content: "흐름에 맡기면 기회가 올 것이다.",
           },
         ],
       },
       {
         which: "JP",
-        question:
-          "끝나고 집에 가서 공부하려 했는데, 친구들이 놀자고 붙잡는다. 나는?",
+        question: "자리 운세에서 ‘예기치 않은 변화가 찾아온다’고 하면?",
         answers: [
           {
             type: "J",
-            content: "계획에 없던 일인데…매우 당황스럽다.",
+            content: "불안하다… 미리 대비할 방법을 생각해야 한다.",
           },
           {
             type: "P",
-            content: "오케이! 역시 계획대로 안 되는 것이 인생! 놀자!!!!",
+            content: "오, 재밌겠다! 어떤 일이 벌어질지 기대된다.",
           },
         ],
       },
       {
         which: "JP",
-        question: "내가 가고싶은 여행지 스타일은?",
+        question: "별자리 별 운세를 볼 때, 당신은?",
         answers: [
           {
             type: "J",
-            content:
-              "내가 계획한대로! 계획적으로 일의 순서대로 진행하는 것을 좋아해!",
+            content: "주간/월간 운세를 정기적으로 확인해본다.",
           },
           {
             type: "P",
-            content:
-              "그때그때 생각나는 대로 일 처리! 융통성 있게 하는 것을 좋아해!",
+            content: "그때그때 궁금할 때만 본다.",
           },
         ],
       },
