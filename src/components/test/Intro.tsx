@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { TestData } from "../../data/TESTS";
 import IntroButtonGroup from "./IntroButtonGroup";
 import { TEST_MODE } from "./TestRenderer";
+import AdsenseUnit from "../AdsenseUnit";
+import KakaoAdfit from "../KakaoAdfit";
 
 const Intro = ({
   info,
@@ -25,6 +27,8 @@ const Intro = ({
       <div className="w-full h-80 bg-blue-200">
         <p>{info.info.mainTitle}</p>
       </div>
+      <AdsenseUnit slot={"9751351604"} />
+      <KakaoAdfit />
       <p>{info.info.mainTitle}로 여러분의 성향을 파악해보세요</p>
       <button
         className="cursor-pointer bg-blue-300 px-8 py-4 rounded-lg font-bold hover:bg-blue-400"

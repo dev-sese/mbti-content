@@ -6,6 +6,7 @@ import ShareButtonGroup from "../components/testResult/ShareButtonGroup";
 import ResultButtonGroup from "../components/testResult/ResultButtonGroup";
 import ResultThumbnailList from "../components/testResult/ResultThumbnailList";
 import KakaoAdfit from "../components/KakaoAdfit";
+import AdsenseUnit from "../components/AdsenseUnit";
 
 const TestResult = () => {
   const { testParam, resultParam } = useParams();
@@ -43,6 +44,7 @@ const TestResult = () => {
     <div>
       {testParam && resultParam && currentTest && (
         <div>
+          <AdsenseUnit slot={"9648250141"} />
           <KakaoAdfit />
           <TestResultRenderer typeResult={typeResult} />
           <ShareButtonGroup

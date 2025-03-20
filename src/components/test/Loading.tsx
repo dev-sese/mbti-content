@@ -3,6 +3,8 @@ import { TestData } from "../../data/TESTS";
 import { useEffect, useState } from "react";
 import { Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
+import AdsenseUnit from "../AdsenseUnit";
+import KakaoAdfit from "../KakaoAdfit";
 
 interface LoadingProps {
   mbtiScore: { [key: string]: number };
@@ -50,12 +52,16 @@ const Loading = ({ mbtiScore, currentTest }: LoadingProps) => {
   }, [navigate, finalQuery, currentTest.info.mainUrl]);
 
   return (
-    <div className="flex justify-center items-center mt-40">
-      <Spin
-        indicator={<LoadingOutlined spin style={{ fontSize: 60 }} />}
-        size="large"
-      />
-    </div>
+    <>
+      <AdsenseUnit slot={"5748533585"} />
+      <div className="w-full flex justify-center items-center mt-40">
+        <Spin
+          indicator={<LoadingOutlined spin style={{ fontSize: 60 }} />}
+          size="large"
+        />
+      </div>
+      <KakaoAdfit />
+    </>
   );
 };
 
