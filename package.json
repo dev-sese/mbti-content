@@ -6,7 +6,7 @@
   "packageManager": "yarn@1.22.22",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && node sitemap-generator.ts",
+    "build": "tsc -b && vite build && node sitemap-generator.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
