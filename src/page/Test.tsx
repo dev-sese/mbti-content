@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { TestData, TESTS } from "../data/TESTS";
 import TestRenderer from "../components/test/TestRenderer";
+import MetatagRenderer from "../components/MetatagRenderer";
 
 const Test = () => {
   const navigate = useNavigate();
@@ -20,7 +21,16 @@ const Test = () => {
     }
   }, [testParam, navigate]);
 
-  return <div>{currentTest && <TestRenderer currentTest={currentTest} />}</div>;
+  return (
+    <div>
+      {currentTest && (
+        <>
+          <MetatagRenderer currentTest={currentTest} />
+          <TestRenderer currentTest={currentTest} />
+        </>
+      )}
+    </div>
+  );
 };
 
 export default Test;
